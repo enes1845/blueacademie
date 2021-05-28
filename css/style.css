@@ -1,0 +1,84 @@
+body {
+    background-image: url(/images/bg-pin-board-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    font-weight: bolder;
+    transition: all 300ms;
+}
+
+h1:hover,
+h1:active {
+    border-bottom: 2px solid #d73530;
+    transform: translate3d(0px, -10px, 0px);
+}
+
+.course {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "Indie Flower", cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #d73530;
+    padding: 0 5% 10% 5%;
+    transition: all 300ms;
+}
+
+.post_it {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 300ms;
+}
+
+.post_it:hover,
+.post_it:active {
+    cursor: pointer;
+    -ms-transform: rotate(-2deg); /* IE 9 */
+    transform: rotate(-2deg);
+}
+
+.post_it:hover ~ .pin,
+.post_it:active ~ .pin {
+    transform: translate3d(-3px, 0px, 0px);
+}
+
+.post_it:hover ~ .course_name,
+.post_it:active ~ .course_name {
+    -ms-transform: rotate(-2deg); /* IE 9 */
+    transform: rotate(-2deg);
+}
+
+.pin {
+    position: absolute;
+    top: -10%;
+    left: 38%;
+    max-width: 15%;
+    transition: all 300ms;
+}
+
+.pin:hover,
+.pin:active {
+    transform: scale(1.2);
+    cursor: zoom-in;
+}
+
+.course_name {
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    max-width: 65%;
+    transition: all 300ms;
+}
+
+.course_name:hover,
+.course_name:active {
+    text-shadow: 1px 1px #000;
+    cursor: help;
+}
